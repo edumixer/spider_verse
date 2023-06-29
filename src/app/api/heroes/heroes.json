@@ -12,7 +12,7 @@
     }
   },
   {
-    "id": "mulher-aranha-65",
+    "id": "spider-woman-65",
     "name": "Mulher-Aranha",
     "universe": 65,
     "details": {
@@ -36,7 +36,7 @@
     }
   },
   {
-    "id": "sp-dr-14512",
+    "id": "spider-dr-14512",
     "name": "SP//DR",
     "universe": 14512,
     "details": {
@@ -81,6 +81,30 @@
       "homeland": "Nueva York",
       "height": 1.78,
       "weight": 77.1
+    }
+  },
+  {
+    "id": "deadpool-lady-3010",
+    "name": "Lady Deadpool",
+    "universe": 3010,
+    "details": {
+    "fullName": "Wanda Wilson",
+    "birthday": "19XX-XX-XX",
+    "homeland": "Terra-3010",
+    "height": 1.83,
+    "weight": 72.2
+    }
+  },
+  {
+    "id": "deadpool-616",
+    "name": "Deadpool",
+    "universe": 616,
+    "details": {
+      "fullName": "Wade Wilson",
+      "birthday": "1991-02-01",
+      "homeland": "Canadá",
+      "height": 1.88,
+      "weight": 95.25
     }
   }
 ]
