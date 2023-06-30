@@ -1,17 +1,7 @@
+import getData from "./api/heroService";
 import styles from "./page.module.scss";
 
 import HeroesList from "@/components/HeroesList";
-import { IHeroData } from "@/interfaces/heroes";
-
-async function getData(): Promise<{ data: IHeroData[] }> {
-  const res = await fetch("http://localhost:3000/api/heroes")
-
-  if (!res.ok) {
-    throw new Error("Falha ao buscar dados dos heróis")
-  }
-
-  return res.json()
-}
 
 export default async function Home() {
   const res = await getData();
