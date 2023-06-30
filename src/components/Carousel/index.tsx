@@ -42,12 +42,15 @@ export default function Carousel({ heroes, activeId }: IProps) {
   const voicesAudio: Record<string, HTMLAudioElement> = useMemo(
     () => ({
       "spider-man-616": new Audio("/songs/spider-man-616.mp3"),
-      "mulher-aranha-65": new Audio("/songs/mulher-aranha-65.mp3"),
+      "spider-woman-65": new Audio("/songs/spider-woman-65.mp3"),
       "spider-man-1610": new Audio("/songs/spider-man-1610.mp3"),
-      "sp-dr-14512": new Audio("/songs/sp-dr-14512.mp3"),
+      "spider-dr-14512": new Audio("/songs/spider-dr-14512.mp3"),
       "spider-ham-8311": new Audio("/songs/spider-ham-8311.mp3"),
       "spider-man-90214": new Audio("/songs/spider-man-90214.mp3"),
       "spider-man-928": new Audio("/songs/spider-man-928.mp3"),
+
+      "deadpool-lady-3010": new Audio("/songs/spider-woman-65.mp3"),
+      "deadpool-616": new Audio("/songs/spider-ham-8311.mp3"),
     }),
     []
   );
@@ -81,7 +84,9 @@ export default function Carousel({ heroes, activeId }: IProps) {
     }
 
     const currentHeroId = visibleItems[1].id;
-    htmlEl.style.backgroundImage = `url("/spiders/${currentHeroId}-background.png")`;
+    const characterFolder = currentHeroId.startsWith('deadpool') ? 'deadpools' : 'spiders';
+
+    htmlEl.style.backgroundImage = `url("/${characterFolder}/${currentHeroId}-background.png")`;
     htmlEl.classList.add("hero-page");
 
     // remove a classe quando o componente é desmontado

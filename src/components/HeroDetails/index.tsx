@@ -18,6 +18,8 @@ interface IProps {
 export default function HeroDetails({ data }: IProps) {
   const {id, name, universe, details } = data;
 
+  const characterFolder = id.startsWith('deadpool') ? 'deadpools' : 'spiders';
+
   return (
     <div className={quicksand.className}>
       <h1 className={`${spidermanFont.className} ${styles.title}`}>
@@ -54,7 +56,7 @@ export default function HeroDetails({ data }: IProps) {
       <div className={styles.details}>
         <h2 className={styles.subtitle}>Primeira Aparição:</h2>
         <Image
-          src={`/spiders/${id}-comic-book.png`}
+          src={`/${characterFolder}/${id}-comic-book.png`}
           alt={`Primeira aparição nos quadrinhos de ${name} no universo ${universe}`}
           width={200}
           height={305}
