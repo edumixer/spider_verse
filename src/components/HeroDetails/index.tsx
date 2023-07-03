@@ -36,7 +36,7 @@ export default function HeroDetails({ data }: IProps) {
             </tr>
             <tr>
               <td className={styles.label}>Data de Nascimento:</td>
-              <td>{new Date(details.birthday).toLocaleDateString("pt-BR")}</td>
+              <td>{details.birthday ? new Date(details.birthday).toLocaleDateString("pt-BR") : "Não informado"}</td>
             </tr>
             <tr>
               <td className={styles.label}>Terra Natal:</td>
