@@ -39,10 +39,10 @@ export default function RootLayout({
           />
           <Link href="/">
             <Image
-              src="/spider-logo.svg"
-              alt="Spiderman"
-              width={260}
-              height={70}
+              src="/avengers-logo.svg"
+              alt="Heroes"
+              width={360}
+              height={140}
               priority
             />
           </Link>
@@ -59,7 +59,7 @@ export default function RootLayout({
           <nav className="open">
             <ul>
               <li>
-                <Link href="/" className={`${spidermanFont.className}`}>Spider Man</Link>
+                <Link href="/spiderman" className={`${spidermanFont.className}`}>Spider Man</Link>
               </li>
               <li>
                 <Link href="/deadpool" className={`${spidermanFont.className}`}>Deadpool</Link>
