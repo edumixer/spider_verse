@@ -1,6 +1,6 @@
 import getData from "../api/heroService";
 
-import CarouselSpider from "@/components/CarouselSpider";
+import Carousel from "@/components/Carousel";
 
 interface IProps {
   params: {
@@ -14,6 +14,6 @@ export default async function Spiderman({ params: { id } }: IProps) {
   // Filtra apenas os heróis cujo ID começa com "spider"
   const spidermanHeroes = res.data.filter(hero => hero.id.startsWith("spider"));
 
-  return <CarouselSpider heroes={spidermanHeroes} activeId={id} />;
+  return <Carousel heroes={spidermanHeroes} activeId={id} />;
 }
 

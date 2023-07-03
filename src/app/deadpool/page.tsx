@@ -1,6 +1,6 @@
 import getData from "../api/heroService";
 
-import CarouselDeadpool from "@/components/CarouselDeadpool";
+import Carousel from "@/components/Carousel";
 
 interface IProps {
   params: {
@@ -14,6 +14,6 @@ export default async function Deadpool({ params: { id } }: IProps) {
   // Filtra apenas os heróis cujo ID começa com "deadpool"
   const deadpoolHeroes = res.data.filter(hero => hero.id.startsWith("deadpool"));
 
-  return <CarouselDeadpool heroes={deadpoolHeroes} activeId={id} />;
+  return <Carousel heroes={deadpoolHeroes} activeId={id} />;
 }
 
