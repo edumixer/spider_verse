@@ -89,7 +89,7 @@
     "universe": 3010,
     "details": {
     "fullName": "Wanda Wilson",
-    "birthday": "19XX-XX-XX",
+    "birthday": null,
     "homeland": "Terra-3010",
     "height": 1.83,
     "weight": 72.2
@@ -105,6 +105,30 @@
       "homeland": "Canadá",
       "height": 1.88,
       "weight": 95.25
+    }
+  },
+  {
+    "id": "deadpool-1610",
+    "name": "Ultimate Deadpool",
+    "universe": 1610,
+    "details": {
+      "fullName": "Wadey Wilson",
+      "birthday": null,
+      "homeland": "Americano",
+      "height": 1.74,
+      "weight": 171
+    }
+  },
+  {
+    "id": "deadpool-venompool",
+    "name": "Venompool",
+    "universe": 90211,
+    "details": {
+      "fullName": "Wade Wilson",
+      "birthday": null,
+      "homeland": "New York City, New York",
+      "height": 2.30,
+      "weight": 240
     }
   }
 ]
