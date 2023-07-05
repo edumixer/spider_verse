@@ -51,6 +51,7 @@ export default function Carousel({ heroes, activeId }: IProps) {
 
       "deadpool-lady-3010": new Audio("/songs/spider-woman-65.mp3"),
       "deadpool-616": new Audio("/songs/spider-ham-8311.mp3"),
+      "deadpool-venompool": new Audio("/songs/spider-man-928.mp3"),
     }),
     []
   );

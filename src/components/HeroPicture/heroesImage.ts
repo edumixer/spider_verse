@@ -10,6 +10,7 @@ import ImageSpiderMan928 from "@public/spiders/spider-man-928.png";
 import ImageLadyDeadpool3010 from "@public/deadpools/deadpool-lady-3010.png";
 import ImageDeadpool616 from "@public/deadpools/deadpool-616.png";
 import ImageDeadpool1610 from "@public/deadpools/deadpool-1610.png";
+import ImageVenompool from "@public/deadpools/deadpool-venompool.png";
 
 const defaultImage: StaticImageData = ImageSpiderMan616;
 
@@ -25,6 +26,7 @@ const heroesImage: Record<string, StaticImageData> = {
   "deadpool-lady-3010": ImageLadyDeadpool3010,
   "deadpool-616": ImageDeadpool616,
   "deadpool-1610": ImageDeadpool1610,
+  "deadpool-venompool": ImageVenompool,
 };
 
 export { heroesImage, defaultImage };
