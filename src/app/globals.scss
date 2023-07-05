@@ -28,7 +28,7 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 3rem 3rem 0;
+  margin: 1.5rem 3rem 0;
   position: relative;
   z-index: 4;
 }
@@ -48,11 +48,17 @@ nav {
   ul {
     list-style: none;
     padding: 10px;
-    padding-top: 50%;
+    padding-top: 70%;
 
     li {
       margin-bottom: 10px;
-    }
+      border-bottom: 5px solid white;
+      border-radius: 15px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }    
 
     a {
       display: block;
